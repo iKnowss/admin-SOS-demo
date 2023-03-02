@@ -35,6 +35,9 @@ function SOSmarker() {
     const [latitude, setLatitude] = useState(null);
     const [longitude, setLongitude] = useState(null);
 
+    // const position = [13.901741919367524, 100.53263742284973]
+    const position = [latitude, longitude]
+
     // Set callback functions
     Client.onConnectionLost = onConnectionLost;
     Client.onMessageArrived = onMessageArrived;
